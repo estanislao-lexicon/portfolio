@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+/* Sidebar styles */
+.sidebar {
+  background-color: #282A36;
+  padding: 20px;  
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Profile Image */
+.profile-img {
+  width: 75%;
+  border-radius: 50%;
+  margin: 15px;
+  margin-bottom: 15px;    
+  margin-left: auto;
+  margin-right: auto;    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Main content styles */
+.main-content {
+  background-color: #282A36;
+  padding: 20px;  
+  overflow: hidden;  
+}
+
+/* Ensure the sidebar looks good on small screens */
+@media (max-width: 768px) {
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #F8F8F2;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Accent hover color for navbar links */
+.accent:hover {
+  color: #ff6462;
+}
+
+/* Background colors */
+.background {
+  background-color: #003f5c;
+}
+
+.secondary-background {
+  /* background-color: #eeeeee; */
+  background-color: #F8F8F2;
+}
+
+/* Heading and paragraph colors */
+h1, h2, h3, h4, h5, h6 {
+  color: #bc5090;
+}
+
+p {
+  color: #58508d;
+}
+
+.text-body, .text-body li {
+  color: #58508d;
+}
+
+.text-body a {
+  color: #ff6462;
+  text-decoration: none;
+}
+
+/* Custom color for comments */
+.comments {
+  color: #ffa600;
+}
+
+/* Contact List Styles */
+.contact-list {
+  list-style-type: none; 
+  padding: 0;            
+  margin: 0;             
+}
+
+.contact-list li {
+  margin-bottom: 10px;   /* Adds spacing between items */
+}
+
+.contact-list a {
+  color: inherit; /* Ensures links inherit the parent color */
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  color: #ff6462; /* Changes color on hover */
+}
+
+.contact-list i {
+  margin-right: 8px; /* Adds space between icon and text */
+}
+
+/* Contact Info Styles */
+.contact-info p {
   display: flex;
-  flex-direction: column;
+  align-items: center; /* Align text and icon vertically */
+  margin: 5px 0; /* Add some margin to space out each line */
+}
+
+.contact-info i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.contact-info a {
+  color: #58508d; /* Ensure the default color is applied */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.contact-info a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Contact Info Links */
+.contact-info a {
+  color: #58508d; /* Set color for all links in contact-info */
+}
+
+.contact-info a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.contact-info .contact-link a {
+  color: #58508d; /* Set color for LinkedIn, GitHub, and email links */
+}
+
+.contact-info .contact-link a:hover {
+  color: #4b4785; /* Optional: Change the hover color */
+}
+
+/* Title Container */
+.title-container {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title-container h3 {
+  margin-right: 8px; /* Space between title and icon */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title-container .fa-link {
+  color: #58508d; /* Or any color you want for the icon */
+  font-size: 1.2em; /* Adjust size if needed */
+  text-decoration: none;
+}
+
+.title-container .fa-link:hover {
+  color: #0056b3; /* Change color on hover if desired */
 }
