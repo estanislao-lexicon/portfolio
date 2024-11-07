@@ -1,13 +1,23 @@
 /* Sidebar styles */
 .sidebar {
-  background-color: #282A36;
+  background-color: #ffffff;
   padding: 20px;  
-  overflow: hidden;
+  overflow: hidden;    
+}
+
+.sticky-sidebar {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 20px;
+}
+
+.sidebar-container {
+  min-height: 100vh; /* Full viewport height */
 }
 
 /* Profile Image */
 .profile-img {
-  width: 75%;
+  width: 50%;
   border-radius: 50%;
   margin: 15px;
   margin-bottom: 15px;    
@@ -17,8 +27,9 @@
 
 /* Main content styles */
 .main-content {
-  background-color: #282A36;
-  padding: 20px;  
+  background-color: #ffffff;
+  padding: 10px;  
+  top: 20px;
   overflow: hidden;  
 }
 
@@ -26,12 +37,32 @@
 @media (max-width: 768px) {
   .sidebar {
     border-right: none;
-    border-bottom: 1px solid #F8F8F2;
+    border-bottom: 1px solid #ffffff;
   }
 }
 
+.section-body {
+  margin-left: 200px;
+  margin-right: 400px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.section-body-title {
+  margin-left: 200px;
+  margin-right: 400px;  
+  margin-bottom: 50px;
+}
+
+.section-body:after {
+  position: absolute;
+  content: url(/public/img/separator.png);  
+  display: block;
+  margin-top: 100px; /* Space between content and separator */  
+}
+
 /* Accent hover color for navbar links */
-.accent:hover {
+.accent-hover:hover {
   color: #ff6462;
 }
 
@@ -46,26 +77,47 @@
 }
 
 /* Heading and paragraph colors */
-h1, h2, h3, h4, h5, h6 {
-  color: #bc5090;
+h1, h2 {
+  font-family: "Playfair Display SC", serif;
+  color: #333;  
 }
 
-p {
-  color: #58508d;
+h3, h4 {
+  font-family: "Playfair Display SC", serif;
+  color: #333;
+  /* margin-bottom: 20px; */
 }
+
+h5, h6 {
+  font-family: "Lato", Arial, sans-serif;
+  color: #333;
+  font-size: 1.1875em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-bottom: 1px solid #b3b3b3;
+  display: inline-block;
+}
+
+p, a {  
+  font-family: "Lato", Arial, sans-serif;
+  color: #8c8c8c;
+}
+
 
 .text-body, .text-body li {
-  color: #58508d;
+  font-family: "Lato", Arial, sans-serif;
+  color: #8c8c8c;
 }
 
 .text-body a {
-  color: #ff6462;
+  color: #8c8c8c;
   text-decoration: none;
 }
 
 /* Custom color for comments */
 .comments {
-  color: #ffa600;
+  color: #333;
 }
 
 /* Contact List Styles */
@@ -85,7 +137,7 @@ p {
 }
 
 .contact-list a:hover {
-  color: #ff6462; /* Changes color on hover */
+  color: #333333; /* Changes color on hover */
 }
 
 .contact-list i {
@@ -96,16 +148,18 @@ p {
 .contact-info p {
   display: flex;
   align-items: center; /* Align text and icon vertically */
-  margin: 5px 0; /* Add some margin to space out each line */
+  margin: 5px 0; /* Add some margin to space out each line */  
 }
 
-.contact-info i {
-  margin-right: 8px; /* Space between icon and text */
+.contact-info i {  
+  color: #8c8c8c;
+  text-align: right;
 }
 
 .contact-info a {
   color: #58508d; /* Ensure the default color is applied */
   text-decoration: none; /* Remove underline from links */
+  margin-left: 10px;
 }
 
 .contact-info a:hover {
@@ -114,19 +168,20 @@ p {
 
 /* Contact Info Links */
 .contact-info a {
-  color: #58508d; /* Set color for all links in contact-info */
+  color: #8c8c8c; /* Set color for all links in contact-info */
+  text-align: right;
 }
 
 .contact-info a:hover {
-  color: #007bff; /* Change color on hover */
+  color: #58508d; /* Change color on hover */
 }
 
 .contact-info .contact-link a {
-  color: #58508d; /* Set color for LinkedIn, GitHub, and email links */
+  color: #8c8c8c; /* Set color for LinkedIn, GitHub, and email links */
 }
 
 .contact-info .contact-link a:hover {
-  color: #4b4785; /* Optional: Change the hover color */
+  color: #8c8c8c; /* Optional: Change the hover color */
 }
 
 /* Title Container */
@@ -140,8 +195,7 @@ p {
 }
 
 .title-container .fa-link {
-  color: #58508d; /* Or any color you want for the icon */
-  font-size: 1.2em; /* Adjust size if needed */
+  color: #333; /* Or any color you want for the icon */  
   text-decoration: none;
 }
 
