@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import './App.css';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         {/* Sidebar Section */}
         <Col xs={12} md={4} lg={3} className="sidebar sticky-sidebar">
           <Card className="mb-4 shadow rounded-0">            
-            <Card.Img variant="top" src="./img/me.jpg" className="profile-img" />
+            <Card.Img variant="top" src='./img/me.jpg' className="profile-img" />
             <Card.Body style={{ marginLeft: '30px', marginRight: '30px'}}>              
                 <h4>Hello World!</h4>
                 <Card.Text>                
@@ -26,9 +26,9 @@ function App() {
 
               {/* Contact Information */}              
               <div className="contact-info" style={{ marginTop:'50px', display: 'flex', justifyContent: 'flex-end'}}>                
-                <a className="fa fa-linkedin fa-2x" href="https://www.linkedin.com/in/esarandon"></a>                        
-                <a className="fa fa-github fa-2x" href="https://github.com/esarandon"></a>
-                <a className="fa fa-envelope fa-2x" href="mailto:esarandon@gmail.com"></a>
+                <a className="fa fa-linkedin fa-2x" href="https://www.linkedin.com/in/esarandon"  aria-label="LinkedIn profile"></a>                        
+                <a className="fa fa-github fa-2x" href="https://github.com/esarandon" aria-label="GitHub profile"></a>
+                <a className="fa fa-envelope fa-2x" href="mailto:esarandon@gmail.com"  aria-label="Send email to esarandon@gmail.com"></a>
               </div>
             </Card.Body>
           </Card>
