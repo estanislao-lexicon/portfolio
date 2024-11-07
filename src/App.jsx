@@ -1,7 +1,7 @@
 import React from 'react';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import './App.css';
 
 
 function App() {
