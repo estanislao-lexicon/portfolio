@@ -9,9 +9,10 @@ function App() {
     <Container fluid>
       <Row>
         {/* Sidebar Section */}
-        <Col xs={12} md={4} lg={3} className="sidebar sticky-sidebar">
+        <Col xs={12} md={4} lg={3} className="sidebar">
           <Card className="mb-4 shadow rounded-0">            
-            <Card.Img variant="top" src='./img/me.jpg' className="profile-img" />
+            {/* <Card.Img variant="top" src='/img/me.jpg' className="profile-img" /> */}
+            <Card.Img variant="top" src='/img/me.jpg' className="profile-img" />
             <Card.Body style={{ marginLeft: '30px', marginRight: '30px'}}>              
                 <h4>Hello World!</h4>
                 <Card.Text>                
@@ -77,7 +78,7 @@ function App() {
               
               {/* Image section */}      
                 <img 
-                  src='./img/MoneyTracking.png'
+                  src='/img/MoneyTracking.png'
                   alt='Money Tracking'
                   className='img-fluid rounded'
                   style={{
@@ -90,7 +91,7 @@ function App() {
                   }}
                 />       
                 <img 
-                  src='./img/MoneyTracking2.png'
+                  src='/img/MoneyTracking2.png'
                   alt='Money Tracking'
                   className='img-fluid rounded'
                   style={{
@@ -131,7 +132,7 @@ function App() {
               
               {/* Image section */}                    
                 <img 
-                  src='./img/Zoezi1.png'
+                  src='/img/Zoezi1.png'
                   alt='Zoezi App'
                   className='img-fluid rounded'
                   style={{
@@ -144,7 +145,7 @@ function App() {
                   }}                  
                 />       
                 <img 
-                  src='./img/Zoezi2.png'
+                  src='/img/Zoezi2.png'
                   alt='Zoezi App'
                   className='img-fluid rounded'
                   style={{
@@ -186,7 +187,7 @@ function App() {
                       
                 {/* Image section */}                      
                   <img 
-                    src='./img/Reader1.png'
+                    src='/img/Reader1.png'
                     alt='Reader - Web Scraper'
                     className='img-fluid rounded'
                     style={{
@@ -199,7 +200,7 @@ function App() {
                     }}                     
                   />       
                   <img 
-                    src='./img/Reader2.png'
+                    src='/img/Reader2.png'
                     alt='Reader - Web Scraper'
                     className='img-fluid rounded'
                     style={{
