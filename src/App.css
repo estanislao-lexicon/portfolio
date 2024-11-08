@@ -15,6 +15,11 @@
   min-height: 100vh; /* Full viewport height */
 }
 
+.card-body-sidebar {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 /* Profile Image */
 .profile-img {
   width: 150px; /* Set a specific width */
@@ -184,6 +189,12 @@ p, a {
 
 .contact-info .contact-link a:hover {
   color: #8c8c8c; /* Optional: Change the hover color */
+}
+
+.contact-info-custom {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Title Container */

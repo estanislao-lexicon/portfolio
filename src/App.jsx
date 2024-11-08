@@ -11,9 +11,8 @@ function App() {
         {/* Sidebar Section */}
         <Col xs={12} md={4} lg={3} className="sidebar">
           <Card className="mb-4 shadow rounded-0">            
-            {/* <Card.Img variant="top" src='/img/me.jpg' className="profile-img" /> */}
             <Card.Img variant="top" src='/img/me.jpg' className="profile-img" />
-            <Card.Body style={{ marginLeft: '30px', marginRight: '30px'}}>              
+            <Card.Body className='card-body-sidebar'>              
                 <h4>Hello World!</h4>
                 <Card.Text>                
                   {/* About Me Text */}                  
@@ -26,7 +25,7 @@ function App() {
               </Card.Text>
 
               {/* Contact Information */}              
-              <div className="contact-info" style={{ marginTop:'50px', display: 'flex', justifyContent: 'flex-end'}}>                
+              <div className="contact-info contact-info-custom">                
                 <a className="fa fa-linkedin fa-2x" href="https://www.linkedin.com/in/esarandon"  aria-label="LinkedIn profile"></a>                        
                 <a className="fa fa-github fa-2x" href="https://github.com/esarandon" aria-label="GitHub profile"></a>
                 <a className="fa fa-envelope fa-2x" href="mailto:esarandon@gmail.com"  aria-label="Send email to esarandon@gmail.com"></a>
@@ -77,32 +76,8 @@ function App() {
                 </div>
               
               {/* Image section */}      
-                <img 
-                  src='/img/MoneyTracking.png'
-                  alt='Money Tracking'
-                  className='img-fluid rounded'
-                  style={{
-                    width: 'auto',
-                    height: '220px',
-                    marginTop: '20px',
-                    display: 'block',
-                    marginLeft: 'auto',
-                    marginRight: 'auto'
-                  }}
-                />       
-                <img 
-                  src='/img/MoneyTracking2.png'
-                  alt='Money Tracking'
-                  className='img-fluid rounded'
-                  style={{
-                    width: 'auto',
-                    height: '220px',
-                    marginTop: '20px',
-                    display: 'block',
-                    marginLeft: 'auto',
-                    marginRight: 'auto'
-                  }}
-                />                      
+                <img src='/img/MoneyTracking.png' alt='Money Tracking' className='img-fluid rounded' style={{ width: 'auto', height: '220px', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />       
+                <img src='/img/MoneyTracking2.png' alt='Money Tracking' className='img-fluid rounded' style={{ width: 'auto', height: '220px', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />                      
               </div>          
             </div>
           </Card.Body>
@@ -131,32 +106,8 @@ function App() {
                 <p>Built with Python: Developed using Python, tailored for a seamless experience on the GNOME desktop environment.</p>
               
               {/* Image section */}                    
-                <img 
-                  src='/img/Zoezi1.png'
-                  alt='Zoezi App'
-                  className='img-fluid rounded'
-                  style={{
-                    width: 'auto',
-                    height: 'auto',
-                    marginTop: '20px',
-                    display: 'block',
-                    marginLeft: 'auto',
-                    marginRight: 'auto'
-                  }}                  
-                />       
-                <img 
-                  src='/img/Zoezi2.png'
-                  alt='Zoezi App'
-                  className='img-fluid rounded'
-                  style={{
-                    width: '800px',
-                    height: '285px',
-                    marginTop: '20px',
-                    display: 'block',
-                    marginLeft: 'auto',
-                    marginRight: 'auto'
-                  }}                  
-                />                      
+                <img src='/img/Zoezi1.png' alt='Zoezi App' className='img-fluid rounded' style={{ width: 'auto', height: 'auto', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />       
+                <img src='/img/Zoezi2.png' alt='Zoezi App' className='img-fluid rounded' style={{ width: '800px', height: '285px', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />                      
               </div>   
             </div>                          
           </Card.Body>        
@@ -186,43 +137,36 @@ function App() {
                 <p>Python: Utilizes popular Python libraries (such as requests and BeautifulSoup) to handle web requests and HTML parsing</p>
                       
                 {/* Image section */}                      
-                  <img 
-                    src='/img/Reader1.png'
-                    alt='Reader - Web Scraper'
-                    className='img-fluid rounded'
-                    style={{
-                      width: '500px',
-                      height: '100px',
-                      marginTop: '20px',
-                      display: 'block',
-                      marginLeft: 'auto',
-                      marginRight: 'auto'
-                    }}                     
-                  />       
-                  <img 
-                    src='/img/Reader2.png'
-                    alt='Reader - Web Scraper'
-                    className='img-fluid rounded'
-                    style={{
-                      width: 'auto',
-                      height: '285px',
-                      marginTop: '20px',
-                      display: 'block',
-                      marginLeft: 'auto',
-                      marginRight: 'auto'
-                    }}
-                  />                      
+                  <img src='/img/Reader1.png' alt='Reader - Web Scraper' className='img-fluid rounded' style={{ width: '500px', height: '100px', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />       
+                  <img src='/img/Reader2.png' alt='Reader - Web Scraper' className='img-fluid rounded' style={{ width: 'auto', height: '285px', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />                      
                 </div>     
               </div>
           </Card.Body>        
           
             
         {/* Other Components */}        
-          <Card.Body className="section-body"y> 
+          <Card.Body className="section-body"> 
             <h1 style={{ marginTop: '50px' }}>TECHNOLOGIES &amp; TOOLS</h1>
             <p align="left">
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> 
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> <img src="https://logowik.com/content/uploads/images/supabase-icon9119.logowik.com.webp" alt="supabase" width="40" height="40"/> <img src="https://www.pngfind.com/pngs/m/104-1044449_python-logo-clipart-drawing-flask-python-hd-png.png" alt="flask" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" alt="ubuntu" width="40" height="40"/> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> 
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> 
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> 
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> 
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> 
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> 
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> 
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> 
+              <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> 
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> 
+              <img src="https://logowik.com/content/uploads/images/supabase-icon9119.logowik.com.webp" alt="supabase" width="40" height="40"/> 
+              <img src="https://www.pngfind.com/pngs/m/104-1044449_python-logo-clipart-drawing-flask-python-hd-png.png" alt="flask" width="40" height="40"/> 
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> 
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> 
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> 
+              <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> 
+              <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> 
+              <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" alt="ubuntu" width="40" height="40"/> 
+              <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> 
             </p>
           </Card.Body>
         </Col>
