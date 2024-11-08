@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.642572c9.css",
-    "main.js": "/portfolio/static/js/main.e7a4a5eb.js",
+    "main.css": "/portfolio/static/css/main.0c87d746.css",
+    "main.js": "/portfolio/static/js/main.d9a91b37.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/me.jpg": "/portfolio/static/media/me.f8a17bd7c6868f0bb306.jpg",
+    "static/media/Reader1.png": "/portfolio/static/media/Reader1.913f67963c35a7606cb3.png",
+    "static/media/Zoezi2.png": "/portfolio/static/media/Zoezi2.47e57cbabb2b27c9daad.png",
+    "static/media/Reader2.png": "/portfolio/static/media/Reader2.d104817386832536632c.png",
+    "static/media/MoneyTracking2.png": "/portfolio/static/media/MoneyTracking2.775be45d98595f643ec2.png",
+    "static/media/MoneyTracking.png": "/portfolio/static/media/MoneyTracking.910981215e7e9fc89281.png",
     "static/media/separator.png": "/portfolio/static/media/separator.43313b65ec6de32ddb24.png",
+    "static/media/Zoezi1.png": "/portfolio/static/media/Zoezi1.871ba092d133b2b02b92.png",
     "index.html": "/portfolio/index.html",
-    "main.642572c9.css.map": "/portfolio/static/css/main.642572c9.css.map",
-    "main.e7a4a5eb.js.map": "/portfolio/static/js/main.e7a4a5eb.js.map",
+    "main.0c87d746.css.map": "/portfolio/static/css/main.0c87d746.css.map",
+    "main.d9a91b37.js.map": "/portfolio/static/js/main.d9a91b37.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.642572c9.css",
-    "static/js/main.e7a4a5eb.js"
+    "static/css/main.0c87d746.css",
+    "static/js/main.d9a91b37.js"
   ]
 }
