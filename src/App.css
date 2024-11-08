@@ -17,6 +17,7 @@
 
 /* Profile Image */
 .profile-img {
+  border-radius: 50%; 
   width: 50%;  
   margin: 15px;
   margin-bottom: 15px;    
