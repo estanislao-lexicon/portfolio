@@ -17,12 +17,14 @@
 
 /* Profile Image */
 .profile-img {
-  border-radius: 50%; 
-  width: 50%;  
+  width: 150px; /* Set a specific width */
+  height: 150px; /* Set height to the same as width for a square */
   margin: 15px;
   margin-bottom: 15px;    
   margin-left: auto;
-  margin-right: auto;    
+  margin-right: auto;
+  border-radius: 50%; /* This makes the image round */
+  object-fit: cover; 
 }
 
 /* Main content styles */
