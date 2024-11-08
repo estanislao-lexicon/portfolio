@@ -11,7 +11,7 @@ function App() {
         {/* Sidebar Section */}
         <Col xs={12} md={4} lg={3} className="sidebar">
           <Card className="mb-4 shadow rounded-0">            
-            <Card.Img variant="top" src='/img/me.jpg' className="profile-img" />
+            <Card.Img variant="top" src='./img/me.jpg' className="profile-img" />
             <Card.Body className='card-body-sidebar'>              
                 <h4>Hello World!</h4>
                 <Card.Text>                
