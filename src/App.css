@@ -22,13 +22,12 @@
 
 /* Profile Image */
 .profile-img {
-  width: 150px; /* Set a specific width */
-  height: 150px; /* Set height to the same as width for a square */
+  width: 200px; /* Set a specific width */  
   margin: 15px;
   margin-bottom: 15px;    
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50%; /* This makes the image round */
+  border-radius: 50% !important; /* This makes the image round */
   object-fit: cover; 
 }
 
@@ -63,7 +62,7 @@
 
 .section-body:after {
   position: absolute;
-  content: url(/public/img/separator.png);  
+  content: url(./img/separator.png);  
   display: block;
   margin-top: 100px; /* Space between content and separator */  
 }

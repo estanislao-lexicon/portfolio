@@ -2,16 +2,17 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './App.css';
+import images from './img/images';
 
 
 function App() {
-  return (
-    <Container fluid>
+  return (    
+    <Container fluid>      
       <Row>
         {/* Sidebar Section */}
         <Col xs={12} md={4} lg={3} className="sidebar">
-          <Card className="mb-4 shadow rounded-0">            
-            <Card.Img variant="top" src='/img/me.jpg' className="profile-img" />
+          <Card className="mb-4 shadow rounded-0">          
+            <Card.Img variant="top" key={0} src={images.me} className="profile-img" />
             <Card.Body className='card-body-sidebar'>              
                 <h4>Hello World!</h4>
                 <Card.Text>                
@@ -77,7 +78,7 @@ function App() {
               
               {/* Image section */}      
                 <img 
-                  src='/img/MoneyTracking.png' 
+                  src={images.Tracking1}
                   alt='Money Tracking' 
                   className='img-fluid rounded' 
                   style={{ 
@@ -90,7 +91,7 @@ function App() {
                     }} 
                   />       
                 <img 
-                  src='/img/MoneyTracking2.png' 
+                  src={images.Tracking2}
                   alt='Money Tracking' 
                   className='img-fluid rounded' 
                   style={{ 
@@ -131,7 +132,7 @@ function App() {
               
               {/* Image section */}                    
                 <img 
-                  src='/img/Zoezi1.png' 
+                  src={images.Zoezi1}
                   alt='Zoezi App' 
                   className='img-fluid rounded' 
                   style={{ 
@@ -144,7 +145,7 @@ function App() {
                     }} 
                   />       
                 <img 
-                  src='/img/Zoezi2.png' 
+                  src={images.Zoezi2}
                   alt='Zoezi App' 
                   className='img-fluid rounded' 
                   style={{ 
@@ -186,7 +187,7 @@ function App() {
                       
                 {/* Image section */}                      
                   <img 
-                    src='/img/Reader1.png' 
+                    src={images.Reader1}
                     alt='Reader - Web Scraper' 
                     className='img-fluid rounded' 
                     style={{ 
@@ -199,7 +200,7 @@ function App() {
                       }}
                   />       
                   <img 
-                    src='/img/Reader2.png' 
+                    src={images.Reader2}
                     alt='Reader - Web Scraper' 
                     className='img-fluid rounded' 
                     style={{ 
