@@ -76,8 +76,32 @@ function App() {
                 </div>
               
               {/* Image section */}      
-                <img src='/img/MoneyTracking.png' alt='Money Tracking' className='img-fluid rounded' style={{ width: 'auto', height: '220px', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />       
-                <img src='/img/MoneyTracking2.png' alt='Money Tracking' className='img-fluid rounded' style={{ width: 'auto', height: '220px', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />                      
+                <img 
+                  src='/img/MoneyTracking.png' 
+                  alt='Money Tracking' 
+                  className='img-fluid rounded' 
+                  style={{ 
+                    width: 'auto', 
+                    height: '220px', 
+                    marginTop: '20px', 
+                    display: 'block', 
+                    marginLeft: 'auto', 
+                    marginRight: 'auto' 
+                    }} 
+                  />       
+                <img 
+                  src='/img/MoneyTracking2.png' 
+                  alt='Money Tracking' 
+                  className='img-fluid rounded' 
+                  style={{ 
+                    width: 'auto', 
+                    height: '220px',
+                    marginTop: '20px', 
+                    display: 'block', 
+                    marginLeft: 'auto', 
+                    marginRight: 'auto' 
+                    }} 
+                  />                      
               </div>          
             </div>
           </Card.Body>
@@ -106,8 +130,32 @@ function App() {
                 <p>Built with Python: Developed using Python, tailored for a seamless experience on the GNOME desktop environment.</p>
               
               {/* Image section */}                    
-                <img src='/img/Zoezi1.png' alt='Zoezi App' className='img-fluid rounded' style={{ width: 'auto', height: 'auto', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />       
-                <img src='/img/Zoezi2.png' alt='Zoezi App' className='img-fluid rounded' style={{ width: '800px', height: '285px', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />                      
+                <img 
+                  src='/img/Zoezi1.png' 
+                  alt='Zoezi App' 
+                  className='img-fluid rounded' 
+                  style={{ 
+                    width: 'auto', 
+                    height: 'auto', 
+                    marginTop: '20px', 
+                    display: 'block', 
+                    marginLeft: 'auto', 
+                    marginRight: 'auto' 
+                    }} 
+                  />       
+                <img 
+                  src='/img/Zoezi2.png' 
+                  alt='Zoezi App' 
+                  className='img-fluid rounded' 
+                  style={{ 
+                    width: '800px', 
+                    height: '285px', 
+                    marginTop: '20px', 
+                    display: 'block', 
+                    marginLeft: 'auto', 
+                    marginRight: 'auto' 
+                    }} 
+                  />                      
               </div>   
             </div>                          
           </Card.Body>        
@@ -137,8 +185,32 @@ function App() {
                 <p>Python: Utilizes popular Python libraries (such as requests and BeautifulSoup) to handle web requests and HTML parsing</p>
                       
                 {/* Image section */}                      
-                  <img src='/img/Reader1.png' alt='Reader - Web Scraper' className='img-fluid rounded' style={{ width: '500px', height: '100px', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />       
-                  <img src='/img/Reader2.png' alt='Reader - Web Scraper' className='img-fluid rounded' style={{ width: 'auto', height: '285px', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />                      
+                  <img 
+                    src='/img/Reader1.png' 
+                    alt='Reader - Web Scraper' 
+                    className='img-fluid rounded' 
+                    style={{ 
+                      width: '500px', 
+                      height: '100px', 
+                      marginTop: '20px', 
+                      display: 'block', 
+                      marginLeft: 'auto', 
+                      marginRight: 'auto' 
+                      }}
+                  />       
+                  <img 
+                    src='/img/Reader2.png' 
+                    alt='Reader - Web Scraper' 
+                    className='img-fluid rounded' 
+                    style={{ 
+                      width: 'auto', 
+                      height: '285px', 
+                      marginTop: '20px', 
+                      display: 'block', 
+                      marginLeft: 'auto', 
+                      marginRight: 'auto' 
+                      }} 
+                    />                      
                 </div>     
               </div>
           </Card.Body>        
