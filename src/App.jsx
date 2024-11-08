@@ -214,8 +214,7 @@ function App() {
                     />                      
                 </div>     
               </div>
-          </Card.Body>        
-          
+          </Card.Body>                  
             
         {/* Other Components */}        
           <Card.Body className="section-body"> 
@@ -245,7 +244,6 @@ function App() {
         </Col>
       </Row>
     </Container>
-
   );
 }
 
