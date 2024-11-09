@@ -214,3 +214,14 @@ p, a {
 .title-container .fa-link:hover {
   color: #0056b3; /* Change color on hover if desired */
 }
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
+  gap: 10px; /* Space between icons */
+  margin-top: 30px;
+}
+
+.icon-container img {
+  margin: 5px; /* Optional: spacing around each icon */
+}
