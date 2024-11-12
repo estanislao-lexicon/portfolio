@@ -3,11 +3,32 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './App.css';
 import images from './img/images';
+import icons from './img/icons/icons';
 import ProjectCard from './components/ProjectCard'
 
 
 
 const projects = [
+  {
+    title: 'SANTA LUCIA CYKLAR WEBSITE',
+    githubLink: 'https://github.com/esarandon/santa-lucia-cyklar',
+    description: 'Santa Lucia Cyklar is a modern, user-friendly platform to browse and explore bikes from various categories. Built with a focus on clarity and ease of use, the website aims to enhance the user’s browsing experience with a visually appealing and responsive design. This website is designed to help visitors explore available bikes, view detailed descriptions, compare prices, and check availability, all within a clean and responsive interface.',    
+    features: [
+      { name: 'Dynamic Grid Layout', details: 'The site displays bikes in a dynamic grid, showcasing their images, descriptions, and other relevant information.' },
+      { name: 'Sorting Options', details: 'Users can sort bikes by price and availability, making it easier to find bikes within a specific budget or check which ones are currently available.' },
+      { name: 'Responsive Design', details: 'The website is optimized for mobile and desktop use, ensuring a seamless experience on any device.' },      
+      // Add more features as objects
+    ],        
+    technologies: [
+      { name: 'HTML', details: 'For the structure and layout of the website.' },
+      { name: 'CSS / Tailwind CSS', details: 'FFor styling and creating a responsive, clean design.' },
+      { name: 'JavaScript / React', details: 'To handle the dynamic elements, including sorting and filtering bikes.' },
+    ],
+    images: [
+      { src: images.SantaLucia1, alt: 'Santa Lucia Cyklar' },
+      { src: images.SantaLucia2, alt: 'Santa Lucia Cyklar' }
+    ]
+  },
   {
     title: 'MONEY TRACKING',
     githubLink: 'https://github.com/esarandon/MoneyTracker',
@@ -75,7 +96,7 @@ function App() {
                 <Card.Text>                
                   {/* About Me Text */}                  
                   With a decade of experience leading sustainability projects, I pursued my dream of becoming a software developer. 
-                  I bring a strong foundation in backend technologies, particularly JavaScript, C#, and Python, with hands-on expertise in frameworks like Nest.js and Next.js. 
+                  I bring a strong foundation in backend technologies, particularly JavaScript, C#, and Python, with hands-on expertise in frameworks like ReactJS and Next.js. 
                   My experience in IoT and embedded systems, paired with my proficiency in protocols such as MQTT and secure communication via SSH, equips me with a unique perspective for developing robust, efficient, and secure applications. 
                   I am skilled in managing databases like Postgres with Prisma and in building tailored REST APIs for IoT devices. 
                   Additionally, my technical background includes C++ for embedded systems, data analysis with Jupyter Notebooks, and experience integrating various hardware components. 
@@ -92,8 +113,8 @@ function App() {
         </Col>
         
          {/* Main Content Area */}
-         <Col xs={12} md={8} lg={9} className="main-content" style={{ marginTop: '20px' }}>
-            <Card.Body className='section-body-title'>            
+         <Col xs={12} md={8} lg={9} className="main-content" >
+            <Card.Body className='section-body'>            
                 <h1>ESTANISLAO SARANDÓN'S PORTFOLIO</h1>
                 <p>Some of my personal projects</p>
             </Card.Body>          
@@ -107,27 +128,29 @@ function App() {
           <Card.Body className="section-body"> 
             <h1 style={{ marginTop: '50px' }}>TECHNOLOGIES &amp; TOOLS</h1>
             <div className="icon-container" align="left">
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40" loading="lazy"/> 
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40" loading="lazy"/> 
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40" loading="lazy"/> 
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40" loading="lazy"/> 
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" loading="lazy"/> 
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" loading="lazy"/> 
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" loading="lazy"/>
+              <img src={icons.python} alt="python" height="50" loading="lazy"/> 
+              <img src={icons.c} alt="c" height="50" loading="lazy"/> 
+              <img src={icons.cpp} alt="cplusplus" height="50" loading="lazy"/> 
+              <img src={icons.cSharp} alt="csharp" height="50" loading="lazy"/> 
+              <img src={icons.javascript} alt="javascript" height="50" loading="lazy"/> 
+              <img src={icons.html} alt="html5" height="50" loading="lazy"/> 
+              <img src={icons.css} alt="css3" height="50" loading="lazy"/>
             </div> 
             <div className='icon-container' align="left">
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40" loading="lazy"/> 
-              <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40" loading="lazy"/> 
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40" loading="lazy"/> 
-              <img src="https://logowik.com/content/uploads/images/supabase-icon9119.logowik.com.webp" alt="supabase" width="40" height="40" loading="lazy"/> 
-              <img src="https://www.pngfind.com/pngs/m/104-1044449_python-logo-clipart-drawing-flask-python-hd-png.png" alt="flask" width="40" height="40" loading="lazy"/> 
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40" loading="lazy"/> 
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" loading="lazy"/> 
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40" loading="lazy"/> 
-              <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40" loading="lazy"/> 
-              <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40" loading="lazy"/> 
-              <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" alt="ubuntu" width="40" height="40" loading="lazy"/> 
-              <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40" loading="lazy"/> 
+              <img src={icons.amazon} alt="aws" height="50" loading="lazy"/> 
+              <img src={icons.azure} alt="azure" height="70" loading="lazy"/> 
+              <img src={icons.postgresql} alt="postgresql" height="50" loading="lazy"/> 
+              <img src={icons.supabase} alt="supabase" height="40" loading="lazy"/> 
+              <img src={icons.flask} alt="flask" height="50" loading="lazy"/> 
+              <img src={icons.dotnet} alt="dotnet" height="40" loading="lazy"/> 
+              <img src={icons.next} alt="next" height="40" loading="lazy"/> 
+              <img src={icons.react} alt="react" height="50" loading="lazy"/> 
+              <img src={icons.docker} alt="docker" height="50" loading="lazy"/> 
+              <img src={icons.postman} alt="postman" height="40" loading="lazy"/> 
+              <img src={icons.git} alt="git" height="40" loading="lazy"/> 
+              <img src={icons.github} alt="github" height="50" loading="lazy"/> 
+              <img src={icons.ubuntu} alt="ubuntu" height="45" loading="lazy"/> 
+              <img src={icons.arduino} alt="arduino" height="40" loading="lazy"/> 
             </div>
           </Card.Body>
         </Col>
