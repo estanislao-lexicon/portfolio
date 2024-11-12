@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.363514cb.css",
-    "main.js": "/portfolio/static/js/main.05af9c5e.js",
+    "main.css": "/portfolio/static/css/main.d50f8686.css",
+    "main.js": "/portfolio/static/js/main.12ed0291.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/SantaLucia1.png": "/portfolio/static/media/SantaLucia1.5f14e2df6c191dad4e1c.png",
     "static/media/SantaLucia2.png": "/portfolio/static/media/SantaLucia2.e1401bffecb9f1eef7cf.png",
@@ -36,12 +36,12 @@
     "index.html": "/portfolio/index.html",
     "static/media/git.svg": "/portfolio/static/media/git.c60b7e5ae8ec2562f23fdddcab300026.svg",
     "static/media/espressif.svg": "/portfolio/static/media/espressif.46800fa947ee0a5fe85a274662d9c055.svg",
-    "main.363514cb.css.map": "/portfolio/static/css/main.363514cb.css.map",
-    "main.05af9c5e.js.map": "/portfolio/static/js/main.05af9c5e.js.map",
+    "main.d50f8686.css.map": "/portfolio/static/css/main.d50f8686.css.map",
+    "main.12ed0291.js.map": "/portfolio/static/js/main.12ed0291.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.363514cb.css",
-    "static/js/main.05af9c5e.js"
+    "static/css/main.d50f8686.css",
+    "static/js/main.12ed0291.js"
   ]
 }
