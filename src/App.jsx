@@ -103,11 +103,13 @@ function App() {
                   I am eager to apply my technical skills, curiosity, and commitment to quality in a new role that challenges me and allows me to contribute meaningfully to the team’s success as I continue to grow as a developer. 
                 </Card.Text>
               {/* Contact Information */}              
-              <div className="contact-info contact-info-custom">                
+              <div className="contact-info contact-info-custom">                                
+                <a className="cv-sidebar" href="https://estanislao-lexicon.github.io/CV/" aria-label='CV'>CV</a>
                 <a className="fa fa-linkedin fa-2x" href="https://www.linkedin.com/in/esarandon"  aria-label="LinkedIn profile"></a>                        
                 <a className="fa fa-github fa-2x" href="https://github.com/esarandon" aria-label="GitHub profile"></a>
-                <a className="fa fa-envelope fa-2x" href="mailto:esarandon@gmail.com"  aria-label="Send email to esarandon@gmail.com"></a>
+                <a className="fa fa-envelope fa-2x" href="mailto:esarandon@gmail.com"  aria-label="Send email to esarandon@gmail.com"></a>                
               </div>
+              
             </Card.Body>
           </Card>
         </Col>

@@ -20,6 +20,19 @@
   margin-right: 30px;
 }
 
+.cv-sidebar {
+  font-size: x-large;
+  font-weight: 1000;
+  display: flex;  
+  margin-right: auto;
+}
+
+.cv-and-contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Profile Image */
 .profile-img {
   width: 200px; /* Set a specific width */  
@@ -80,21 +93,6 @@
   display: block;
   margin-top: 50px;
 } 
-
-/* Accent hover color for navbar links */
-.accent-hover:hover {
-  color: #ff6462;
-}
-
-/* Background colors */
-.background {
-  background-color: #003f5c;
-}
-
-.secondary-background {
-  /* background-color: #eeeeee; */
-  background-color: #F8F8F2;
-}
 
 /* Heading and paragraph colors */
 h1, h2 {
